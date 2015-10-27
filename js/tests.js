@@ -40,3 +40,13 @@ test("fullName should work", function() {
   equal(name, "Bruce Wayne");
 });
 //END OF CLASS EXAMPLE
+
+//SAME FORMAT OF CLASS EXAMPLE ABOVE
+test("the hulk can talk", function() {
+  // setup
+  var hulk = new SuperHero("Bruce Banner", "The Hulk", 34, "Superhuman Strength");
+  // action
+  var talk = hulk.talk();
+  // assertion
+  equal(talk, "I'm Bruce Banner, I'm 34 yrs old, and my alter ego is The Hulk!");
+});
